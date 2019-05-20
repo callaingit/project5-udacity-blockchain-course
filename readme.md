@@ -14,6 +14,11 @@ The provider for the network rinkeby in my truffle-confif.js assumes you have a 
 
 * Setup
 I assume you have truffle installed (I had 5.0.18 installed globally)
-I installed openzeppelin-solidity@2.1.2 in the project directory in order to get its base contract for my token
-I installed truffle-hdwallet-provider@1.0.2 in the project directory in order to use rinkeby with truffle and my metamask wallet
-
+Please run npm install openzeppelin-solidity@2.1.2 in the project directory in order to get its base contract for my token
+Please run npm install truffle-hdwallet-provider@1.0.2 in the project directory in order to use rinkeby with truffle
+Please run npm install in the app directory to get all the npm packages to run the web application
+Run truffle develop in the project directory
+  In truffle, run compile (just type compile) as the build directory is excluded in the .gitignore that we were provided with
+  In truffle, run migrate --reset to deploy contracts locally
+You will have to use truffle migrate --reset --network rinkeby to deploy contracts on rinkeby
+You will have to run npm run dev from the app project folder to run the web server and go to http://localhost:8080 to use the DApp
